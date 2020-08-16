@@ -15,7 +15,7 @@
                         <th>{{$selec->marca}}</th>
                         <td>{{$selec->descripcion}}</td>
                         <td>${{$selec->precio}}</td>
-                        <td><img style="width:90px;" src="{{ asset('storage/'.$selec->foto) }}"/></td>
+                        <td><img style="width:90px;" src="{{ Storage::disk('public')->path($selec->foto) }}"/></td>
                         <td>
                             @if(!in_array($selec->id_producto, $datos['idProductosComprados']))
                                 <input type="button" class="btn btn-info" value="Comprar" @click.stop="comprar($event, {{$selec->id_producto}})">
