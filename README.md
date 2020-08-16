@@ -60,10 +60,10 @@ _1. Create a new babyshower filling all form fields. The system only leaves sche
 _2. Test both generated links._
 _3. In the first generated link, the user can add or delete items from the list, again and again._
 _4. In the second link the user can buy and block items and can't buy it again or enable it._
-_5. This tests has been tried with different babyshower instances, and they can't interfer between them._
+_5. This tests has been tried with different babyshower instances, and they can not interfer between them._
 
 ## Deployment 📦
-_To enter the system, go to the follwing URL from the host:_
+_To enter the system, go to the following URL from the host:_
 ```
 localhost:<HOST_PORT>/babyshower/public/index.php
 ```
