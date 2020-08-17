@@ -37,7 +37,7 @@ _In the Docker console or in the Linux terminal if you use LAMP architecture and
 STEP 4.
 _Clone the project using Git:_
 ```
-#>cd /var/www/html
+#>cd /var/www
 #>git clone https://github.com/jacobravo/babyshower.git
 #>cd babyshower
 ```
