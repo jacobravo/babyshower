@@ -50,6 +50,9 @@ _Enable project._
 #>composer update
 #>composer dump-autoload
 #>php artisan migrate
+
+_"composer update" command may take a few minutes_
+
 ```
 STEP 6.
 _Enable access._
