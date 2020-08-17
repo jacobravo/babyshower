@@ -19,7 +19,7 @@ This guide is made for a Docker mount system, but is possible to clone it into a
 _NOTICE: If you don't use Docker, jump to step 3._
 
 STEP 1. 
-_Open a system terminal and write the following. In the HOST_PORT field write the port where you want to enter from the host system._
+_Open a system terminal (cmd in Windows) and write the following. In the HOST_PORT field write the port where you want to enter from the host system._
 ```
 #>docker run -d -p <HOST_PORT>:80 --name babyshower -v /var/www:/var/www/ mattrayner/lamp:latest-1804
 ```
@@ -40,6 +40,8 @@ STEP 4.
 _Clone the project using Git:_
 ```
 #>cd /var/www
+#>mkdir html
+#>cd html
 #>git clone https://github.com/jacobravo/babyshower.git
 #>cd babyshower
 ```
@@ -50,14 +52,14 @@ _Enable project._
 #>composer update
 #>composer dump-autoload
 #>php artisan migrate
+```
 
 _"composer update" command may take a few minutes_
 
-```
 STEP 6.
 _Enable access._
 ```
-#>chown -R www-data:www-data /var/www/html
+#>chown -R www-data:www-data /var/www
 ```
 ## Testing ⚙️
 The following tests has been made:
@@ -70,7 +72,7 @@ _5. This tests has been tried with different babyshower instances, and they can 
 ## Deployment 📦
 _To enter the system, go to the following URL from the host:_
 ```
-localhost:<HOST_PORT>/babyshower/public/index.php
+localhost:<HOST_PORT>/babyshower/public/index
 ```
 
 ## Built using the following tools 🛠️
