@@ -34,6 +34,8 @@ _In the Docker console or in the Linux terminal if you use LAMP architecture and
 #>create database babyshower;
 #>exit;
 ```
+_If throws an alert when you enter the "mysql" command, please try again_
+
 STEP 4.
 _Clone the project using Git:_
 ```
